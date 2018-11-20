@@ -1,0 +1,316 @@
+﻿/*Общее*/
+
+.roshalonline body {
+	background: #3498db;
+}
+
+/* Сетка */
+
+.grid {
+	margin: 0px auto 80px;
+	max-width: 1000px;
+	width: 90%;
+}
+
+/* Стили плиток Якори и Блоки */
+
+.plate {
+	float: left;
+	min-width: 500px;
+	width: 50%;
+}
+
+/*Скрытая секция с тарифами для работы скрипта подбора*/
+
+.hidden-t{
+    display: none;
+}
+
+#Ethernet,
+#ADSL{
+    width: 100%;
+}
+
+/* Смещение каждой четной плитки на 30 пикселей */
+
+.plate:nth-child(odd) {
+	margin: 30px 0 -30px 0;
+}
+
+/*Фигуры*/
+
+.grid figure {
+	position: relative;
+	overflow: hidden;
+	margin: 5px;
+	background: #ffffff;
+    color: #333;
+}
+
+.grid figure .background-img {
+	position: relative;
+	display: block;
+	-webkit-transition: opacity 1.3s;
+	transition: opacity 1.3s;
+}
+
+.grid figcaption {
+	position: absolute;
+	top: 0;
+	z-index: 11;
+	padding: 13px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+.grid figcaption h2 {
+	margin: 0 0 20px 0;
+	color: #3498db;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 300;
+	font-size: 110%;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.grid figcaption .description {
+	padding: 0 20px;
+	color: #aaa;
+	font-weight: 300;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+}
+
+.grid figcaption h2,
+.grid figcaption .description {
+	-webkit-transform: translateY(50px);
+	transform: translateY(50px);
+}
+
+.grid figcaption,
+.grid figcaption h2,
+.grid figcaption .description {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+/*Содержимое плитки*/
+
+.ref-content {       
+	-webkit-transition: opacity 0.2s;
+	transition: opacity 0.2s;
+    color: #aaa;
+	font-weight: 300;
+    opacity: 0;
+    text-align: center;
+}
+
+.ref-content a,
+.ref-content button {
+    font-size: 0.95em;
+	background-color: #fffFFF;
+	padding: 0.5em 0.5em;
+	outline: none;
+	border: 2px solid #3498db;
+	color: #3498db;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 500;
+}
+
+.ref-content a:hover,
+.ref-content button:hover,
+.quiz-p:hover {
+    border-color: black;
+    color: black;
+    cursor: pointer;
+}
+
+.ref-content h3 {
+    font-size: 1.1em;
+    color: #3498db;
+    text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 500;
+}
+
+.quiz-p{
+    font-size: 0.95em;
+	background-color: #fffFFF;
+	padding: 0.5em 0.5em;
+	outline: none;
+	border: 2px solid #aaa;
+	color: #aaa;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 500;
+}
+
+/*Элементы формы опроса*/
+
+.hide-content{
+    -webkit-transition: opacity 0.2s;
+	transition: opacity 0.2s;
+    color: #aaa;
+	font-weight: 300;
+    opacity: 0;
+    text-align: center;
+    display: none;
+}
+
+.hide-content a,
+.hide-content button {
+    font-size: 0.95em;
+	background-color: #fffFFF;
+	padding: 0.5em 0.5em;
+	outline: none;
+	border: 2px solid #3498db;
+	color: #3498db;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 500;
+}
+
+.hide-content a:hover,
+.hide-content button:hover {
+    border-color: black;
+    color: black;
+    cursor: pointer;
+}
+
+.clicked-p{
+    border-color: black;
+    color: black;
+    cursor: pointer;
+}
+
+#t-name{
+    color: #3498db;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 300;
+	font-size: 110%;
+}
+
+/*Положение содержимого плитки*/
+
+#first {
+    margin-top: -25px;
+}
+
+.main-quiz{
+    margin-top: -20px;
+}
+
+.page-quiz{
+    margin-top: -50px;
+}
+
+.end-quiz{
+    margin-top: -65px;
+}
+
+/* SVG */
+
+.grid svg {
+	position: absolute;
+	top: -1px; /* fixes rendering issue in FF */
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+}
+
+.grid svg path {
+	fill: #fff;
+}
+
+/* Div Hover эффекты */
+
+.grid div:hover figcaption h2,
+.grid div:hover figcaption .description {
+	-webkit-transform: translateY(1px); /* I cheged it */
+	transform: translateY(1px); /* I cheged it */
+}
+
+.grid div:hover figcaption .description {
+	opacity: 0;
+}
+
+.grid div:hover section {
+	opacity: 1;
+}
+
+.grid div:hover .background-img {
+    opacity: 0;
+}
+
+/* Медиа запросы */
+
+@media screen and (max-width: 1024px){
+    .grid {
+		max-width: 500px;
+	}
+
+	.plate a {
+		width: 100%;
+	}
+
+    .plate:nth-child(odd) {
+	    margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 532px){
+    .grid {
+		max-width: 400px;
+	}
+
+    .plate {
+	    
+	    width: 100%;
+    }
+}
+
+/*@media screen and (max-width: 50em) {
+	.grid {
+		max-width: 500px;
+	}
+
+	.plate a {
+		width: 100%;
+	}
+
+    .plate:nth-child(odd) {
+	    margin-bottom: 5px;
+    }
+}*/
+
+@media screen and (max-width: 45em) {
+	.slider {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 38em) {
+	.slider {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 31em) {
+	.slider {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 27em) {
+	.slider {
+        width: 80%;
+    }
+}

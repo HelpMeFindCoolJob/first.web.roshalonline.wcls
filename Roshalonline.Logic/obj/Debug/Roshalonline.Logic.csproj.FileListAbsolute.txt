@@ -1,0 +1,11 @@
+C:\Users\Администратор\Documents\Visual Studio 2015\Projects\roshalonline\Roshalonline.Logic\bin\Debug\Roshalonline.Logic.dll
+C:\Users\Администратор\Documents\Visual Studio 2015\Projects\roshalonline\Roshalonline.Logic\bin\Debug\Roshalonline.Logic.pdb
+C:\Users\Администратор\Documents\Visual Studio 2015\Projects\roshalonline\Roshalonline.Logic\bin\Debug\AutoMapper.dll
+C:\Users\Администратор\Documents\Visual Studio 2015\Projects\roshalonline\Roshalonline.Logic\bin\Debug\Roshalonline.Data.dll
+C:\Users\Администратор\Documents\Visual Studio 2015\Projects\roshalonline\Roshalonline.Logic\bin\Debug\EntityFramework.dll
+C:\Users\Администратор\Documents\Visual Studio 2015\Projects\roshalonline\Roshalonline.Logic\bin\Debug\Roshalonline.Data.pdb
+C:\Users\Администратор\Documents\Visual Studio 2015\Projects\roshalonline\Roshalonline.Logic\bin\Debug\AutoMapper.xml
+C:\Users\Администратор\Documents\Visual Studio 2015\Projects\roshalonline\Roshalonline.Logic\bin\Debug\EntityFramework.xml
+C:\Users\Администратор\Documents\Visual Studio 2015\Projects\roshalonline\Roshalonline.Logic\obj\Debug\Roshalonline.Logic.csprojResolveAssemblyReference.cache
+C:\Users\Администратор\Documents\Visual Studio 2015\Projects\roshalonline\Roshalonline.Logic\obj\Debug\Roshalonline.Logic.dll
+C:\Users\Администратор\Documents\Visual Studio 2015\Projects\roshalonline\Roshalonline.Logic\obj\Debug\Roshalonline.Logic.pdb

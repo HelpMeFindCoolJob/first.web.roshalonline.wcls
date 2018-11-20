@@ -1,0 +1,9 @@
+C:\Users\Администратор\Documents\Visual Studio 2015\Projects\roshalonline\Roshalonline.Provider\bin\Debug\Roshalonline.Provider.dll
+C:\Users\Администратор\Documents\Visual Studio 2015\Projects\roshalonline\Roshalonline.Provider\bin\Debug\Roshalonline.Provider.pdb
+C:\Users\Администратор\Documents\Visual Studio 2015\Projects\roshalonline\Roshalonline.Provider\bin\Debug\Roshalonline.Data.dll
+C:\Users\Администратор\Documents\Visual Studio 2015\Projects\roshalonline\Roshalonline.Provider\bin\Debug\EntityFramework.dll
+C:\Users\Администратор\Documents\Visual Studio 2015\Projects\roshalonline\Roshalonline.Provider\bin\Debug\Roshalonline.Data.pdb
+C:\Users\Администратор\Documents\Visual Studio 2015\Projects\roshalonline\Roshalonline.Provider\bin\Debug\EntityFramework.xml
+C:\Users\Администратор\Documents\Visual Studio 2015\Projects\roshalonline\Roshalonline.Provider\obj\Debug\Roshalonline.DataProvider.csprojResolveAssemblyReference.cache
+C:\Users\Администратор\Documents\Visual Studio 2015\Projects\roshalonline\Roshalonline.Provider\obj\Debug\Roshalonline.Provider.dll
+C:\Users\Администратор\Documents\Visual Studio 2015\Projects\roshalonline\Roshalonline.Provider\obj\Debug\Roshalonline.Provider.pdb

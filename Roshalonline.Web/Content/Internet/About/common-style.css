@@ -1,0 +1,406 @@
+﻿/*Общее*/
+
+.roshalonline body {
+	background: #3498db;
+}
+
+/* Сетка */
+
+.grid {
+	margin: 0px auto 80px;
+	max-width: 1000px;
+	width: 90%;
+}
+
+ /* Стили плиток Якори и Блоки */
+
+.grid a {
+	float: left;
+	max-width: 500px;
+	width: 50%;
+	color: #333;
+}
+
+.grid div {
+	float: left;
+	max-width: 500px;
+	width: 50%;
+}
+
+/* Смещение каждой четной плитки на 30 пикселей */
+
+.grid a:nth-child(odd) {
+	margin: 30px 0 -30px 0;
+}
+
+.grid div:nth-child(odd) {
+	margin: 30px 0 -30px 0;
+}
+
+/*Фигуры*/
+
+.grid figure {
+	position: relative;
+	overflow: hidden;
+	margin: 5px;
+	background: #ffffff;
+    color: #333;
+}
+
+.grid figure .background-img {
+	position: relative;
+	display: block;
+	-webkit-transition: opacity 1.3s;
+	transition: opacity 1.3s;
+}
+
+.grid figcaption {
+	position: absolute;
+	top: 0;
+	z-index: 11;
+	padding: 13px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+.grid figcaption h2 {
+	margin: 0 0 20px 0;
+	color: #3498db;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 300;
+	font-size: 110%;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.grid figcaption .description {
+	padding: 0 20px;
+	color: #aaa;
+	font-weight: 300;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+}
+
+.grid figcaption h2,
+.grid figcaption .description {
+	-webkit-transform: translateY(50px);
+	transform: translateY(50px);
+}
+
+.grid figcaption,
+.grid figcaption h2,
+.grid figcaption .description {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+
+/*Содержимое плитки*/
+
+.custom-content {       
+	-webkit-transition: opacity 0.2s;
+	transition: opacity 0.2s;
+    color: #aaa;
+	font-weight: 300;
+    opacity: 0;
+}
+
+.text-content {
+    text-align: justify;
+    text-indent: 25px;
+}
+.ref-content {       
+	-webkit-transition: opacity 0.2s;
+	transition: opacity 0.2s;
+    color: #aaa;
+	font-weight: 300;
+    opacity: 0;
+    text-align: center;
+}
+
+.ref-content button {
+    font-size: 0.95em;
+	background-color: #fffFFF;
+	padding: 0.5em 0.5em;
+	outline: none;
+	border: 2px solid #3498db;
+	color: #3498db;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 500;
+}
+
+.ref-content button:hover {
+    border-color: black;
+    color: black;
+    cursor: pointer;
+}
+
+.ref-content h3 {
+    font-size: 1.1em;
+    color: #3498db;
+    text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 500;
+}
+
+/*Положение содержимого плитки*/
+
+ #first {
+    margin-top: -45px;
+}
+
+#second{
+    margin-top: 10px;
+}
+
+#third {
+    margin-top: -20px;
+}
+
+#fourth {
+    margin-top: 30px;
+}
+
+/* SVG */
+
+.grid svg {
+	position: absolute;
+	top: -1px; /* fixes rendering issue in FF */
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+}
+
+.grid svg path {
+	fill: #fff;
+}
+
+/* Div Hover эффекты */
+
+.grid div:hover figcaption h2,
+.grid div:hover figcaption .description {
+	-webkit-transform: translateY(1px); /* I cheged it */
+	transform: translateY(1px); /* I cheged it */
+}
+
+.grid div:hover figcaption .description {
+	opacity: 0;
+}
+
+.grid div:hover section {
+	opacity: 1;
+}
+
+.grid div:hover .background-img {
+    opacity: 0;
+}
+
+/* Hover эффекты якорей */
+
+.grid a:hover figcaption h2,
+.grid a:hover figcaption .description {
+	-webkit-transform: translateY(-5px); /* I cheged it */
+	transform: translateY(-5px); /* I cheged it */
+}
+
+.grid a:hover figcaption .description {
+	opacity: 0;
+}
+
+/* Медиа запросы */
+
+@media screen and (max-width: 70em) {
+    #first {
+        margin-top: -80px;
+    }
+
+    #second{
+        margin-top: -30px;
+    }
+
+    #third {
+        margin-top: -65px;
+    }
+
+    #fourth {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 58em) {
+	.grid div {
+		width: 50%;
+        margin: auto;
+	}
+
+    #first {
+        margin-top: -80px;
+    }
+
+    #second{
+        margin-top: -30px;
+    }
+
+    #third {
+        margin-top: -65px;
+    }
+
+    #fourth {
+        margin-top: 0px;
+    }
+
+    .grid div:nth-child(2n-1) {
+		margin: 30px auto -30px auto;
+	}
+}
+
+@media screen and (max-width: 51em){
+    #first {
+        margin-top: -120px;
+    }
+
+    #second{
+        margin-top: -30px;
+    }
+
+    #third {
+        margin-top: -65px;
+    }
+
+    #fourth {
+        margin-top: 0px;
+    }
+
+    .grid div:nth-child(2n-1) {
+		margin: 30px auto -30px auto;
+	}
+}
+
+@media screen and (max-width: 47em){
+    .custom-content img,
+    .ref-content img {
+        display: none;
+    }
+    
+    #first {
+        margin-top: -75px;
+    }
+
+    #second{
+        margin-top: -20px;
+    }
+
+    #third {
+        margin-top: -90px;
+    }
+
+    #fourth {
+        margin-top: -45px;
+    }
+
+    .grid div:nth-child(even) {
+		margin: 30px 0 -30px 0
+	}
+}
+
+@media screen and (max-width: 42em){
+    .custom-content img,
+    .ref-content img {
+        display: none;
+    }
+    
+    #first {
+        margin-top: -125px;
+    }
+
+    #second{
+        margin-top: -30px;
+    }
+
+    #third {
+        margin-top: -120px;
+    }
+
+    #fourth {
+        margin-top: -45px;
+    }
+
+    .grid div:nth-child(even) {
+		margin: 30px 0 -30px 0
+	}
+}
+
+@media screen and (max-width: 38em) {
+    .grid{
+       max-width: 500px;
+	}
+
+    .grid div {
+		width: 100%;        
+	}
+
+    #first {
+        margin-top: -40px;
+    }
+
+    #second{
+        margin-top: 20px;
+    }
+
+    #third {
+        margin-top: -25px;
+    }
+
+    #fourth {
+        margin-top: 20px;
+    }
+
+    .grid div:nth-child(even) {
+		margin: 30px 0 -30px 0
+	}
+}
+
+
+@media screen and (max-width: 20em) {
+    .grid{
+       max-width: 250px;
+	}
+
+    .grid div {
+		width: 100%;        
+	}
+
+    .description {
+        display: none;
+    }
+
+    .custom-content img,
+    .ref-content img {
+        display: none;
+    }
+    
+    #first {
+        margin-top: -15px;
+    }
+
+    #second{
+        margin-top: 90px;
+    }
+
+    #third {
+        margin-top: 0px;
+    }
+
+    #fourth {
+        margin-top: 30px;
+    }
+
+    .grid div:nth-child(even) {
+		margin: 30px 0 -30px 0
+	}
+}

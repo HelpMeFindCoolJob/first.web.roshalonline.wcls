@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0D1A9292-E28F-413E-B381-F6D8B1B3F9F1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Roshalonline.Data</RootNamespace>
+    <AssemblyName>Roshalonline.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Context\DatabaseContext.cs" />
+    <Compile Include="Context\Initializer.cs" />
+    <Compile Include="Entities\Feedback.cs" />
+    <Compile Include="Entities\PeriodicTarif.cs" />
+    <Compile Include="Entities\News.cs" />
+    <Compile Include="Entities\Note.cs" />
+    <Compile Include="Entities\Product.cs" />
+    <Compile Include="Entities\TelephonyMgTarif.cs" />
+    <Compile Include="Entities\User.cs" />
+    <Compile Include="Interfaces\IDatabaseWorker.cs" />
+    <Compile Include="Interfaces\IRepository.cs" />
+    <Compile Include="Migrations\201610190839013_today.cs" />
+    <Compile Include="Migrations\201610190839013_today.Designer.cs">
+      <DependentUpon>201610190839013_today.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610190923422_today1.cs" />
+    <Compile Include="Migrations\201610190923422_today1.Designer.cs">
+      <DependentUpon>201610190923422_today1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610190945235_today2.cs" />
+    <Compile Include="Migrations\201610190945235_today2.Designer.cs">
+      <DependentUpon>201610190945235_today2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610190956120_today3.cs" />
+    <Compile Include="Migrations\201610190956120_today3.Designer.cs">
+      <DependentUpon>201610190956120_today3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610190958304_today4.cs" />
+    <Compile Include="Migrations\201610190958304_today4.Designer.cs">
+      <DependentUpon>201610190958304_today4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610191012219_today5.cs" />
+    <Compile Include="Migrations\201610191012219_today5.Designer.cs">
+      <DependentUpon>201610191012219_today5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610191030325_today6.cs" />
+    <Compile Include="Migrations\201610191030325_today6.Designer.cs">
+      <DependentUpon>201610191030325_today6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610191201157_today7.cs" />
+    <Compile Include="Migrations\201610191201157_today7.Designer.cs">
+      <DependentUpon>201610191201157_today7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611170838415_NewsResetup.cs" />
+    <Compile Include="Migrations\201611170838415_NewsResetup.Designer.cs">
+      <DependentUpon>201611170838415_NewsResetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611301319198_today8.cs" />
+    <Compile Include="Migrations\201611301319198_today8.Designer.cs">
+      <DependentUpon>201611301319198_today8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201612120651182_author.cs" />
+    <Compile Include="Migrations\201612120651182_author.Designer.cs">
+      <DependentUpon>201612120651182_author.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201612120732110_typenews.cs" />
+    <Compile Include="Migrations\201612120732110_typenews.Designer.cs">
+      <DependentUpon>201612120732110_typenews.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201612120914266_1155.cs" />
+    <Compile Include="Migrations\201612120914266_1155.Designer.cs">
+      <DependentUpon>201612120914266_1155.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201612161150275_UserCategory.cs" />
+    <Compile Include="Migrations\201612161150275_UserCategory.Designer.cs">
+      <DependentUpon>201612161150275_UserCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201612201301599_tarifs.cs" />
+    <Compile Include="Migrations\201612201301599_tarifs.Designer.cs">
+      <DependentUpon>201612201301599_tarifs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201612210812219_tarifsEdit.cs" />
+    <Compile Include="Migrations\201612210812219_tarifsEdit.Designer.cs">
+      <DependentUpon>201612210812219_tarifsEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201612211122109_anothertarif.cs" />
+    <Compile Include="Migrations\201612211122109_anothertarif.Designer.cs">
+      <DependentUpon>201612211122109_anothertarif.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201612211245338_anothertarif1.cs" />
+    <Compile Include="Migrations\201612211245338_anothertarif1.Designer.cs">
+      <DependentUpon>201612211245338_anothertarif1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\DatabaseWorker.cs" />
+    <Compile Include="Repositories\FeedbackRepository.cs" />
+    <Compile Include="Repositories\PeriodicTarifRepository.cs" />
+    <Compile Include="Repositories\NewsRepository.cs" />
+    <Compile Include="Repositories\NoteRepository.cs" />
+    <Compile Include="Repositories\ProductRepository.cs" />
+    <Compile Include="Repositories\TelephonyMgTarifRepository.cs" />
+    <Compile Include="Repositories\UserRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201610190839013_today.resx">
+      <DependentUpon>201610190839013_today.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610190923422_today1.resx">
+      <DependentUpon>201610190923422_today1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610190945235_today2.resx">
+      <DependentUpon>201610190945235_today2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610190956120_today3.resx">
+      <DependentUpon>201610190956120_today3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610190958304_today4.resx">
+      <DependentUpon>201610190958304_today4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610191012219_today5.resx">
+      <DependentUpon>201610191012219_today5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610191030325_today6.resx">
+      <DependentUpon>201610191030325_today6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610191201157_today7.resx">
+      <DependentUpon>201610191201157_today7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611170838415_NewsResetup.resx">
+      <DependentUpon>201611170838415_NewsResetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611301319198_today8.resx">
+      <DependentUpon>201611301319198_today8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201612120651182_author.resx">
+      <DependentUpon>201612120651182_author.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201612120732110_typenews.resx">
+      <DependentUpon>201612120732110_typenews.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201612120914266_1155.resx">
+      <DependentUpon>201612120914266_1155.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201612161150275_UserCategory.resx">
+      <DependentUpon>201612161150275_UserCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201612201301599_tarifs.resx">
+      <DependentUpon>201612201301599_tarifs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201612210812219_tarifsEdit.resx">
+      <DependentUpon>201612210812219_tarifsEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201612211122109_anothertarif.resx">
+      <DependentUpon>201612211122109_anothertarif.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201612211245338_anothertarif1.resx">
+      <DependentUpon>201612211245338_anothertarif1.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
